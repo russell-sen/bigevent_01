@@ -73,7 +73,9 @@
             <td>{{$value.state}}</td>
             <td>
 
-                <button type="button" class="layui-btn layui-btn-xs">编辑</button>
+                <!-- 1. 用a标签的href属性，进行跳转 -->
+                <!-- 2. 用js代码，location.href属性;(绑定事件，事件委托，自定义属性) -->
+                <a href="/article/art_edit.html?id={{ $value.Id }}" class="layui-btn layui-btn-xs">编辑</a>
 
                 <button type="button" data-id="{{$value.Id}}" " class="layui-btn layui-btn-xs layui-btn-danger btn-delete ">删除</button>
             </td>
