@@ -88,7 +88,11 @@ $(function() {
                     return layer.msg(res.message);
                 }
                 layer.msg('文章发布成功！')
-                location.href = '/article/art_list.html'
+                    // location.href = '/article/art_list.html'
+                setTimeout(function() {
+                    window.parent.document.getElementById('art_list').click();
+
+                }, 1500);
             }
         })
     }
